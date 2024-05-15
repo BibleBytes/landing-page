@@ -103,7 +103,7 @@ input::-webkit-contacts-auto-fill-button {
 
 :root {
 	--color-mode: "dark";
-	--theme-color: #ff6161;
+	--theme-color: #0070F3;
 	--page-bg-color: #12171c;
 	--bg-off: #1f2327;
 	--border-color: #373c3f;
@@ -292,7 +292,7 @@ form {
 	margin: 45px auto;
 }
 
-form input {
+form input, .button {
 	border: 2px solid var(--border-color);
 	background-color: var(--page-bg-color);
 	color: var(--text-color);
@@ -305,12 +305,12 @@ form input {
 	transition: all 0.3s;
 }
 
-form input:focus {
+form input:focus, .button:focus {
 	border: 2px solid var(--border-color-lighter);
 	transition: all 0.3s;
 }
 
-form input[type=submit] {
+form input[type=submit], .button {
 	background-color: var(--theme-color);
 	border: none;
 	color: #fff;
@@ -321,7 +321,7 @@ form input[type=submit] {
 	margin-right: 0;
 }
 
-form input[type=submit]:hover {
+form input[type=submit]:hover, .button:hover {
 	opacity: 0.8;
 	transition: all 0.3s;
 }
@@ -625,7 +625,7 @@ footer {
 		max-width: 100%;
 	}
 
-	form input[type=submit] {
+	form input[type=submit], .button {
 		width: 100%;
 	}
 }
